@@ -1,0 +1,13 @@
+response = input("Hi, how are you doing? ")
+print(response + " That sounds neat!")
+print("If you ever want to stop talking, just print end! ")
+rand = random.randint(0,4)
+input("")
+responselist = ["No problem! ", "You're welcome! ", "Did you get a response yet? ","Thanks for asking! ", "What's your favorite color? ", "Cool! ", "Do you think this program is cool?  ", "Great! ", "My favorite color is red! "]
+while(response != "end"):
+  random.seed = random.randint(0, 100)
+  response = input(responselist[rand])
+  responselist.append("Remember when we were talking about \"" + response + "\"? Do you want to continue? ")
+  rand = random.randint(0, len(responselist) - 1)
+
+
